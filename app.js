@@ -4,7 +4,7 @@ let minut = document.getElementById('minutes');
 let second = document.getElementById('second');
 setInterval(function () {
    let currentDate = new Date().getTime();
-   let augest14 = new Date('14 aug 2025').getTime();
+   let augest14 = new Date('14 August 2025').getTime();
    let total = augest14 - currentDate;
    let days = Math.floor(total / (1000 * 60 * 60 * 24));
    day.innerHTML=days
@@ -16,3 +16,4 @@ setInterval(function () {
    second.innerHTML=seconds
 
 }, 1000)
+
